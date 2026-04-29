@@ -1,0 +1,8 @@
+opencv-python
+pyotp
+qrcode
+pillow
+yagmail
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2

@@ -1,0 +1,28 @@
+# Email Configuration for OTP
+# Replace these values with your actual email credentials
+# For Gmail, use an App Password instead of your regular password
+
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASSWORD=your-app-password
+SMTP_SERVER=smtp.gmail.com
+
+# Gmail API Configuration (Recommended for Gmail users)
+# Set USE_GMAIL_API=true to use Gmail API instead of SMTP
+# Requires credentials.json file from Google Cloud Console
+USE_GMAIL_API=false
+CREDENTIALS_PATH=credentials.json
+TOKEN_PATH=token.json
+
+# Note: For Gmail API setup:
+# 1. Go to Google Cloud Console: https://console.cloud.google.com/
+# 2. Create a new project or select existing one
+# 3. Enable Gmail API
+# 4. Create OAuth 2.0 credentials (Desktop application)
+# 5. Download credentials.json and place in the app directory
+# 6. Set USE_GMAIL_API=true
+# 7. First run will open browser for OAuth consent
+
+# For SMTP (fallback method):
+# 1. Enable 2-factor authentication on your Google account
+# 2. Generate an App Password: https://support.google.com/accounts/answer/185833
+# 3. Use the App Password in EMAIL_PASSWORD above
